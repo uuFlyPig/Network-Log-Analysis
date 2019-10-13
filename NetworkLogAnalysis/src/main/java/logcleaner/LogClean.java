@@ -12,7 +12,8 @@ import java.io.IOException;
 
 public class LogClean {
     public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
-        args=new String[]{"E:\\stupidIdea\\access_2018_05_30.log","E:\\stupidIdea\\result"};
+       // 测试用
+        // args=new String[]{"E:\\stupidIdea\\access_2018_05_30.log","E:\\stupidIdea\\result"};
 
         Configuration conf = new Configuration();
         Job job = Job.getInstance();
@@ -24,7 +25,7 @@ public class LogClean {
         job.setMapOutputKeyClass(NullWritable.class);
         job.setMapOutputValueClass(Text.class);
 
-        job.setNumReduceTasks(0);
+        job.setNumReduceTasks(1);
 
         //输入路径
         FileInputFormat.setInputPaths(job,new Path(args[0]));

@@ -12,7 +12,7 @@ import java.util.Locale;
 
 public class ParserLog {
     //将字符串格式化位时间戳
-    public static final SimpleDateFormat TIMESTAMP= new SimpleDateFormat("d/MM/yyyy:HH:mm:ss", Locale.ENGLISH);
+    public static final SimpleDateFormat TIMESTAMP= new SimpleDateFormat("dd/MMM/yyyy:HH:mm:ss", Locale.ENGLISH);
     public static final SimpleDateFormat TIMEFORMAT= new SimpleDateFormat("yyyyMMddmmss");
     /**
      * 解析IP地址
